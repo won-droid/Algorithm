@@ -1,0 +1,11 @@
+class Solution {
+    fun solution(absolutes: IntArray, signs: BooleanArray): Int {
+        var answer: Int = 0
+        for(i in absolutes.indices){
+            if(signs[i] == false)
+                absolutes[i]*=-1
+            answer += absolutes[i]
+        }
+        return answer
+    }
+}
